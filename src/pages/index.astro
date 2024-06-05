@@ -1,5 +1,5 @@
 ---
-
+import App from '../components/App';
 ---
 
 <html lang="en">
@@ -8,9 +8,16 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Pokemon</title>
+		<style>
+			body {
+				background-color: aliceblue;
+			}
+		</style>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<main>
+			<App client:only />
+		</main>
 	</body>
 </html>
